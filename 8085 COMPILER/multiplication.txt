@@ -1,0 +1,14 @@
+	   MVI B,08
+	   MVI D,64
+	   LXI H,0000
+
+LOOP:	   MOV A,L
+	   ADD B
+	   MOV L,A
+	   JNC NEXT
+	   INR H
+
+NEXT:	   DCR D
+	   JNZ LOOP
+	   SHLD 2000
+	   HLT
