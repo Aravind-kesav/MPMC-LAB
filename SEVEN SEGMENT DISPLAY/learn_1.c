@@ -3,7 +3,8 @@ void delay(int);
 void main()
 {
    int i,j;
-	int a[8]={128,121,121,121,128,61,57,120};
+	//int a[8]={128,121,121,121,128,61,57,120}; //for .GCTEEE
+	int a[8]={61,63,63,63,56,62,57,182}; //for GOODLUCK
 	int b[8] = {8,4,2,1,8,4,2,1};
     
 	TRISB=0;
@@ -41,3 +42,4 @@ void delay(int j)
 {
 while(j--);
 }
+
